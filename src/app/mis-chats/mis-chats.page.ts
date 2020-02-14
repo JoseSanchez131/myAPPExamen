@@ -14,6 +14,8 @@ export class MisChatsPage implements OnInit {
 
   constructor( private _toastCtrl : ToastController, private _usuarioService : UsuarioService) {}
 
+
+  //Obtenemos todos los usuarios con el metodo creado en usuario service y los vamos añadiendo en el array que luego llamaremos desde el HTML
   ngOnInit() {
     let ref = this._usuarioService.getUsuarios();
     

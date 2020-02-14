@@ -10,14 +10,14 @@ export interface IProducto{
     id: string,
     
 }
-
+// Generamos la interfaz con la que recuperaremos los usuarios
 export interface Iusuarios{
     correo: string,
     id: string,
     nombre : string,
 
 }
-
+//Generamos la interfaz con la que recuperaremos los mensajes
 export interface IMensaje{
     emisor: string,
     destinatario: string,

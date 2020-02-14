@@ -19,7 +19,7 @@ export class ChatPage implements OnInit {
   ngOnInit() {
     
   }
-
+//Generamos el metodo que llama el boton que hace el insert de los mensajes cogiendo en el mensaje que metemos por pantalla
   mensajesList(mensaje) {
     let mensajesUsuarios: (IMensaje)
   

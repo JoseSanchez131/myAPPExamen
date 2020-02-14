@@ -17,6 +17,7 @@ export class UsuarioService{
         return ref;
 
     }
+    //Generamos los dos metodos de get y put del nodo creado en firebase
 
     getmensajesUsuarios(): firebase.database.Reference{
         let ref = this._db.database.ref("mensajesUsuarios");
