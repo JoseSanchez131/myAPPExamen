@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> Mis chats</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<ion-card>   
+  <ion-card-content>   
+    <ion-list>
+      <ion-item *ngFor="let item of usuarios">
+        <ion-grid>
+          <ion-row>
+            <ion-col>Correo: {{item.correo}}</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>Id: {{item.id}}</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>nombre: {{item.nombre}}</ion-col>
+          </ion-row>
+          </ion-grid>
+          <ion-button expand="block" [routerLink]="['/chat/',item.id]" routerDirection="forward">
+            Chat
+       </ion-button>
+      </ion-item>
+    </ion-list>
+    </ion-card-content> 
+  </ion-card> 
+</ion-content>

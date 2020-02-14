@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>chat</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-input placeholder="Mensaje:" [(ngModel)]="Mensaje"></ion-input>
+
+  <ion-input [value]="uid" ></ion-input>
+
+  <ion-button (click)="mensajesList(Mensaje)">Enviar</ion-button>
+
+</ion-content>

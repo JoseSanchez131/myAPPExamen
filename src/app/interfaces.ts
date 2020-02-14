@@ -11,6 +11,21 @@ export interface IProducto{
     
 }
 
+export interface Iusuarios{
+    correo: string,
+    id: string,
+    nombre : string,
+
+}
+
+export interface IMensaje{
+    emisor: string,
+    destinatario: string,
+    mensaje : string,
+
+}
+
+
 export interface IProductoUsuarios {
     idProducto : string,
     propietario : string,

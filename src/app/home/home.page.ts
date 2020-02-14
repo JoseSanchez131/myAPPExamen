@@ -55,12 +55,12 @@ productosUsuarios: (IProductoUsuarios)[] = [];
   }
 
   like(id) {
-
     let productoUsuario: (IProductoUsuarios)
   
     productoUsuario = {
       "idProducto" : id,
       "propietario": "n9NDsnNsUMf9yp0RI1GIFRAoP8t2",
+      
     }
   
     this._productoService.setProductoUsuarios(productoUsuario);

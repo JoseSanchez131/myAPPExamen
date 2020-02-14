@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { IProducto, ITecnologia, IInmobiliaria, IMotor } from '../interfaces';
+import { IProducto, ITecnologia, IInmobiliaria, IMotor, IMensaje } from '../interfaces';
 import { AngularFireDatabase } from '@angular/fire/database';
 
 
@@ -17,5 +17,17 @@ export class UsuarioService{
         return ref;
 
     }
+
+    getmensajesUsuarios(): firebase.database.Reference{
+        let ref = this._db.database.ref("mensajesUsuarios");
+        return ref;
+    }
+
+    setmensajeUsuarios(usuario: IMensaje){
+        let ref = this._db.database.ref("mensajesUsuarios");
+        ref.push(usuario);
+  
+      }
+    
 
 }
